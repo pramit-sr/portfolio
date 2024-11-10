@@ -61,6 +61,12 @@
 .project__button:hover .project__button-icon{
     transform: translateX(0.25rem);
 }
+.project__description {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-5);
+  }
+  
 
 /* ACTIVE PROJECT */
 .active__project {
