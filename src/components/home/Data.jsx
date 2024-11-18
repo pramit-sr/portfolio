@@ -56,7 +56,7 @@ const Data = () => {
             </svg>
         </h1>
         <h3 className="home__subtitle">
-            Web Developer
+            Software Developer
         </h3>
         <p className="home__description">
         Skilled in DSA and frontend development, creating engaging, user-focused applications.
