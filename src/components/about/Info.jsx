@@ -4,21 +4,21 @@ import { HiOutlineDesktopComputer, HiOutlineTerminal, HiOutlineSparkles } from "
 const Info = () => {
   return (
     <div className="about__info grid">
-        <div className="about__box">
-            <HiOutlineDesktopComputer className="about__icon" />
-            <h3 className="about__title">Avid</h3>
-            <span className="about__subtitle">Learner</span>
-        </div>
-        <div className="about__box">
-            <HiOutlineTerminal className="about__icon" />
-            <h3 className="about__title">Completed</h3>
-            <span className="about__subtitle">Multiple Projects</span>
-        </div>
-        <div className="about__box">
-            <HiOutlineSparkles className="about__icon" />
-            <h3 className="about__title">Support</h3>
-            <span className="about__subtitle">Online 24*7</span>
-        </div>
+    {/* //     <div className="about__box">
+    //         <HiOutlineDesktopComputer className="about__icon" />
+    //         <h3 className="about__title">Avid</h3>
+    //         <span className="about__subtitle">Learner</span>
+    //     </div>
+    //     <div className="about__box">
+    //         <HiOutlineTerminal className="about__icon" />
+    //         <h3 className="about__title">Completed</h3>
+    //         <span className="about__subtitle">Multiple Projects</span>
+    //     </div>
+    //     <div className="about__box">
+    //         <HiOutlineSparkles className="about__icon" />
+    //         <h3 className="about__title">Support</h3>
+    //         <span className="about__subtitle">Online 24*7</span>
+    //     </div> */}
     </div>
   );
 }

@@ -31,7 +31,18 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
     border-radius: 1rem;
+    height: 400px;
+    width: 280px;
 }
+.tech-button {
+    margin-bottom: 5px; /* Adds 5px space after each button */
+    margin-right: 5px;
+    padding: 5px 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
 
 .project__img {
     width: 295px;
@@ -44,14 +55,21 @@
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-5);
 }
-
 .project__button {
+    display: flex;           /* Use flexbox to arrange buttons in a row */
+    gap: 10px;               /* Space between the buttons */
+    margin-top: 6px;
+    margin-right: 6px;
+  }
+  
+  .project__button button {
     color: var(--text-color);
     font-size: var(--small-font-size);
-    display: flex;
-    align-items: center;
-    column-gap: 0.25rem;
-}
+    padding: 10px 20px;      /* Add padding to make the button bigger */
+    border-radius: 5px;      /* Apply border-radius */
+    border: 1px solid #ccc; /* Optional: Border for the button */
+  }
+  
 
 .project__button-icon {
     font-size: 1rem;
