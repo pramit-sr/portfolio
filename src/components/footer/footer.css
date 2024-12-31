@@ -1,6 +1,8 @@
 .footer {
     background-color: var(--container-color);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative; /* Make sure the element is positioned */
+    transform: translateY(-150px); /* Lifts the section by 20px */
 }
 
 .footer__container {

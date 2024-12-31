@@ -1,4 +1,4 @@
-.qualification__container {
+/* .qualification__container {
     max-width: 768px;
 }
 
@@ -82,7 +82,7 @@
 }
 
 /* BREAK POINTS */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .qualification__container {
         margin-left: auto;
         margin-right: auto;
@@ -110,4 +110,4 @@
     .qualification__data {
         gap: 0.5rem;
     }
-}
+} */ 

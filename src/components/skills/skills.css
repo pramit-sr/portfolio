@@ -10,6 +10,18 @@
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
+.skills {
+    margin-top: 0; /* Ensure no extra margin at the top */
+    padding-top: 0; /* Remove any padding if there is a large gap */
+}
+#skills {
+    padding: 4rem 0;
+    border-radius: 0.5rem;
+    position: relative; /* Make sure the element is positioned */
+    transform: translateY(-175px); /* Lifts the section by 20px */
+}
+
+
 
 .skills__title {
     font-size: var(--normal-font-size);

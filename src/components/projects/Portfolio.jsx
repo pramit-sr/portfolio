@@ -22,7 +22,6 @@ const Portfolio = () => {
         >
           Check out my latest work
         </h2>
-
         </span>
         <Projects />
     </section>

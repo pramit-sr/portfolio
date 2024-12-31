@@ -1,4 +1,4 @@
-.services__container {
+/* .services__container {
     grid-template-columns: repeat(3, 270px);
     justify-content: center;
     column-gap: 1.8rem;
@@ -112,13 +112,13 @@
 }
 
 /* ACTIVE MODAL */
-.active-modal {
+/* .active-modal {
     opacity: 1;
     visibility: visible;
 }
 
 /* BREAK POINTS */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .services__container {
         grid-template-columns: repeat(3, 218px);
     }
@@ -156,4 +156,4 @@
    .services__content {
         padding-right: 6rem;
    }
-}
+}  */

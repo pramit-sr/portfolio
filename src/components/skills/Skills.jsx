@@ -10,7 +10,7 @@ const Skills = () => {
         <span className="section__subtitle">Technical Level</span>
         <div className="skills__container container grid">
             <Frontend />
-            <Backend /> 
+            <Backend />
         </div>
     </section>
   );

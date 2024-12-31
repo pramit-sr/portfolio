@@ -4,7 +4,12 @@
     column-gap: 6rem;
     padding-bottom: 3rem;
 }
-
+#contact{
+    padding: 4rem 0;
+    border-radius: 0.5rem;
+    position: relative; /* Make sure the element is positioned */
+    transform: translateY(-200px); /* Lifts the section by 20px */
+}
 .contact__title {
     text-align: center;
     font-size: var(--h3-font-size);
