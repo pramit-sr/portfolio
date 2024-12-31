@@ -15,14 +15,12 @@ const Portfolio = () => {
           </h2>
         </div>
         </div>
-        <span className="section__subtitle" >
-        <h2 
-          className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-center mx-auto !text-7xl"
-          style={{ fontSize: "4rem", lineHeight: "1.2" }}
-        >
-          Check out my latest work
-        </h2>
+        <span className="section__subtitle">
+          <h2>
+            Check out my latest work
+          </h2>
         </span>
+
         <Projects />
     </section>
   );
