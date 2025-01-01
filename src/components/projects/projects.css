@@ -11,6 +11,18 @@
     position: relative; /* Make sure the element is positioned */
     transform: translateY(-170px); /* Lifts the section by 20px */
 }
+.project-title {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 12px; /* Smaller padding for a compact size */
+    font-size: 1rem; /* Smaller font size, equivalent to text-xl */
+    font-weight: bold;
+    margin: 8px; /* Reduced margin for less spacing around the block */
+  }
+  
+  
 .project__item {
     color: var(--title-color);
     padding: 0.25rem 0.75rem;
@@ -96,7 +108,9 @@
     background-color: var(--title-color);
     color: var(--container-color);
 }
-
+.section__subtitle h2{
+    font-size: 50px;
+}
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .project__container {
@@ -120,6 +134,9 @@
     .project__container {
         grid-template-columns: max-content;
     }
+    .section__subtitle h2{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -130,6 +147,9 @@
     .project__img {
         width: 100%;
     }
+    .section__subtitle h2{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -139,5 +159,8 @@
 
     .project__filters {
         column-gap: 0.25rem;
+    }
+    .section__subtitle h2{
+        font-size: 12px;
     }
 }

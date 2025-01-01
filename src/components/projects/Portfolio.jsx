@@ -7,12 +7,7 @@ const Portfolio = () => {
     <section className="portfolio section" id="portfolio">
         <div className="section__title">
         <div className="flex justify-center items-center w-full">
-          <h2 
-            className="inline-block bg-black text-white px-6 py-3 rounded-xl text-4xl font-bold m-4"
-            style={{ display: "inline-block", backgroundColor: "#000", color: "#fff", borderRadius: "8px" , paddingLeft:"10px" , paddingRight:"10px" }}
-          >
-            My Projects
-          </h2>
+        <h2 className="project-title">My Projects</h2>
         </div>
         </div>
         <span className="section__subtitle">
@@ -20,7 +15,6 @@ const Portfolio = () => {
             Check out my latest work
           </h2>
         </span>
-
         <Projects />
     </section>
   );
