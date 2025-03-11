@@ -9,7 +9,7 @@ export const projectsData = [
         title: "AlgoVision",
         category: "A",
         description: "AlgoVision is an interactive web app that visualizes and explains algorithms step-by-step.",
-        link: "https://algo-vision-nine.vercel.app/", // Add your specific link here
+        link: "https://algovision-five.vercel.app/", // Add your specific link here
     },
     {
         id: 2,
