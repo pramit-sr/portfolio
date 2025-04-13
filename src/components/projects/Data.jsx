@@ -1,7 +1,7 @@
 import Project1 from "../../assets/project1.webp";
-import Project2 from "../../assets/project2.webp";
-import Project3 from "../../assets/project3.webp";
-
+import Project2 from "../../assets/project2.png";
+import Project3 from "../../assets/project3.png";
+import Project4 from "../../assets/project4.png";
 export const projectsData = [
     {
         id: 1,
@@ -14,18 +14,26 @@ export const projectsData = [
     {
         id: 2,
         image: Project2,
-        title: "klothing.com",
+        title: "knowledgePlus",
         category: "B",
-        description: "Klothing is a stylish and user-friendly front page for an online clothing store.",
-        link: "https://pramit-sr.github.io/klothing/", // Add your specific link here
+        description: "knowledgePlus is an online learning platform with expert-led courses across diverse subjects.",
+        link: "https://github.com/pramit-sr/lms", // Add your specific link here
     },
     {
         id: 3,
         image: Project3,
-        title: "Generate Random Password",
+        title: "TaskVault",
         category: "C",
-        description: "The Random Password Generator creates secure, unpredictable passwords.",
-        link: "https://pramit-sr.github.io/Generate-Random-Password/", // Add your specific link here
+        description: "TaskVault is a personalized task tracker for efficiently managing daily to-dos.",
+        link: "https://todo-app-rho-murex-36.vercel.app/", // Add your specific link here
+    },
+    {
+        id: 4,
+        image: Project4,
+        title: "Coupon Distribution",
+        category: "D",
+        description: "A web app that distributes coupons to users in a round-robin manner, preventing abuse.",
+        link: "https://round-robin-coupons-frontend.vercel.app/", // Add your specific link here
     },
 ];
 
