@@ -2,42 +2,52 @@ import Project1 from "../../assets/project1.webp";
 import Project2 from "../../assets/project2.png";
 import Project3 from "../../assets/project3.png";
 import Project4 from "../../assets/project4.png";
+import Project5 from "../../assets/project5.png";
 export const projectsData = [
     {
         id: 1,
         image: Project1,
         title: "AlgoVision",
         category: "A",
-        description: "AlgoVision is an interactive web app that visualizes and explains algorithms step-by-step.",
+        description: "Interactive web app that visualizes algorithms step-by-step.",
         link: "https://algovision-five.vercel.app/", // Add your specific link here
-        technologies: ["React", "JavaScript", "CSS", "DSA", "Algorithms", "Vercel"]
+        technologies: ["React", "JavaScript", "CSS", "DSA"]
     },
     {
         id: 2,
         image: Project2,
         title: "knowledgePlus",
         category: "B",
-        description: "knowledgePlus is an online learning platform with expert-led courses across diverse subjects.",
+        description: "Online learning platform with expert-led courses.",
         link: "https://github.com/pramit-sr/lms", // Add your specific link here
-        technologies: ["React", "Node.js", "MongoDB", "Express", "CSS", "JavaScript"]
+        technologies: ["React", "Node.js", "MongoDB", "Express"]
     },
     {
         id: 3,
         image: Project3,
         title: "TaskVault",
         category: "C",
-        description: "TaskVault is a personalized task tracker for efficiently managing daily to-dos.",
+        description: "Personalized task tracker for managing daily to-dos.",
         link: "https://todo-app-rho-murex-36.vercel.app/", // Add your specific link here
-        technologies: ["React", "CSS", "JavaScript", "LocalStorage", "Vercel"]
+        technologies: ["React", "CSS", "JavaScript", "LocalStorage"]
     },
     {
         id: 4,
         image: Project4,
         title: "Coupon Distribution",
         category: "D",
-        description: "A web app that distributes coupons to users in a round-robin manner, preventing abuse.",
+        description: "Web app that distributes coupons in round-robin manner.",
         link: "https://round-robin-coupons-frontend.vercel.app/", // Add your specific link here
-        technologies: ["React", "Node.js", "Express", "MongoDB", "Vercel", "TailwindCSS"]
+        technologies: ["React", "Node.js", "Express", "MongoDB"]
+    },
+    {
+        id: 5,
+        image: Project5,
+        title: "Syfe Savings Planner",
+        category: "E",
+        description: "Shows savings growth over time with easy charts, custom inputs, and a feature to save progress.",
+        link: "https://syfe-savings-planner-nine.vercel.app/", // Add your specific link here
+        technologies: ["React","JavcScript","LocalStorage", "Vercel", "TailwindCSS"]
     },
 ];
 
