@@ -10,6 +10,7 @@ export const projectsData = [
         category: "A",
         description: "AlgoVision is an interactive web app that visualizes and explains algorithms step-by-step.",
         link: "https://algovision-five.vercel.app/", // Add your specific link here
+        technologies: ["React", "JavaScript", "CSS", "DSA", "Algorithms", "Vercel"]
     },
     {
         id: 2,
@@ -18,6 +19,7 @@ export const projectsData = [
         category: "B",
         description: "knowledgePlus is an online learning platform with expert-led courses across diverse subjects.",
         link: "https://github.com/pramit-sr/lms", // Add your specific link here
+        technologies: ["React", "Node.js", "MongoDB", "Express", "CSS", "JavaScript"]
     },
     {
         id: 3,
@@ -26,6 +28,7 @@ export const projectsData = [
         category: "C",
         description: "TaskVault is a personalized task tracker for efficiently managing daily to-dos.",
         link: "https://todo-app-rho-murex-36.vercel.app/", // Add your specific link here
+        technologies: ["React", "CSS", "JavaScript", "LocalStorage", "Vercel"]
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const projectsData = [
         category: "D",
         description: "A web app that distributes coupons to users in a round-robin manner, preventing abuse.",
         link: "https://round-robin-coupons-frontend.vercel.app/", // Add your specific link here
+        technologies: ["React", "Node.js", "Express", "MongoDB", "Vercel", "TailwindCSS"]
     },
 ];
 

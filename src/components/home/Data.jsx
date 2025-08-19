@@ -56,7 +56,7 @@ const Data = () => {
             </svg> */}
         </h1>
         <h3 className="home__subtitle">
-        Pre-final year student driven by curiosity, adept at learning new technologies, and excelling in problem-solving.
+        final year student driven by curiosity, adept at learning new technologies, and excelling in problem-solving.
         </h3>
         <p className="home__description">
         </p>

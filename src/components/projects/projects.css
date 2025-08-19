@@ -83,8 +83,17 @@
     color: var(--text-color);
     font-size: var(--small-font-size);
     padding: 10px 20px;      /* Add padding to make the button bigger */
-    border-radius: 5px;      /* Apply border-radius */
-    border: 1px solid #ccc; /* Optional: Border for the button */
+    border-radius: 12px;      /* More rounded corners */
+    border: 1px solid #999; /* Darker border color */
+    background-color: #f5f5f5; /* Slightly darker background */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  .project__button button:hover {
+    background-color: #e0e0e0; /* Darker background on hover */
+    border-color: #666; /* Darker border on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
   }
   
 
