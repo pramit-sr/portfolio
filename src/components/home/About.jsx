@@ -1,5 +1,5 @@
 import React from 'react';
-import {HiOutlineArrowSmDown} from "react-icons/hi";
+
 
 const Scroll = () => {
   return (
