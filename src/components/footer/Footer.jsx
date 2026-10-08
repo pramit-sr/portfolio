@@ -1,34 +1,11 @@
 import React from 'react';
 import "./footer.css";
-import { FiTwitter, FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer__container container">
-            <ul className="footer__list">
-                <li>
-                    <a href="#about" className="footer__link">About</a>
-                </li>
-                <li>
-                    <a href="#portfolio" className="footer__link">Projects</a>
-                </li>
-                <li>
-                    <a href="#testimonials" className="footer__link">Testimonials</a>
-                </li>
-            </ul>
-            <div className="footer__social">
-                <a href="https://www.instagram.com/" className="home__social-icon" target="_blank" rel="noreferrer">
-                    <FiInstagram />
-                </a>
-                <a href="https://github.com/pramit-sr" className="home__social-icon" target="_blank" rel="noreferrer">
-                    <FiGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/pramit-sarkar-0b2884251/" className="home__social-icon" target="_blank" rel="noreferrer" >
-                    <FiLinkedin />
-                </a>    
-            </div>
-            <span className="footer__copy"></span>
+            <span className="footer__copy">&copy; {new Date().getFullYear()} Pramit Sarkar</span>
         </div>
     </footer>
   );

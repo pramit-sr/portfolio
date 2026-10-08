@@ -1,10 +1,9 @@
 import React from 'react';
-import CV from "../../assets/CV.pdf";
 const Data = () => {
   return (
     <div className="home__data">
         <h1 className="home__title">
-            hi, I am Pramit
+            Pramit Sarkar
             {/* <svg
                 width="15"
                 height="15"
@@ -56,14 +55,8 @@ const Data = () => {
             </svg> */}
         </h1>
         <h3 className="home__subtitle">
-        final year student driven by curiosity, adept at learning new technologies, and excelling in problem-solving.
+        Driven by curiosity, continuous learning, and a passion for exploring new technologies and solving challenging problems.
         </h3>
-        <p className="home__description">
-        </p>
-
-        <a download="" href={CV} className="button button--flex">
-            Download CV
-        </a>
     </div>
     
   )

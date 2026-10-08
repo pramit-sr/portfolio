@@ -1,175 +1,144 @@
-.project__filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 0.75rem;
-    margin-bottom: var(--mb-2);
-}
-#portfolio{
+#portfolio {
     padding: 4rem 0;
-    border-radius: 0.5rem;
-    position: relative; /* Make sure the element is positioned */
-    transform: translateY(-170px); /* Lifts the section by 20px */
+    position: relative;
+    transform: translateY(-170px);
 }
-.project-title {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    border-radius: 8px;
-    padding: 8px 12px; /* Smaller padding for a compact size */
-    font-size: 1rem; /* Smaller font size, equivalent to text-xl */
-    font-weight: bold;
-    margin: 8px; /* Reduced margin for less spacing around the block */
-  }
-  
-  
-.project__item {
+
+.portfolio__title {
     color: var(--title-color);
-    padding: 0.25rem 0.75rem;
-
-    font-weight: var(--font-medium);
-    border-radius: 0.5rem;
-    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
 }
 
-.project__item:hover {
-    background-color: var(--title-color);
-    color: var(--container-color);
+.portfolio__subtitle {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
 }
 
 .project__container {
-    grid-template-columns: repeat(2, max-content);
-    gap: 3rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
 }
 
 .project__card {
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1.25rem;
-    border-radius: 1rem;
-    height: 450px;
-    width: 280px;
-}
-.tech-button {
-    margin-bottom: 5px; /* Adds 5px space after each button */
-    margin-right: 5px;
-    padding: 5px 5px;
-    font-size: 10px;
-    border-radius: 5px;
-    border: none;
+    min-width: 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
+.project__image-button {
+    display: block;
+    width: 30%;
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+    cursor: zoom-in;
+}
 
 .project__img {
-    width: 295px;
-    border-radius: 1rem;
-    margin-bottom: var(--mb-1);
+    display: block;
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project__image-button .project__img {
+    width: 100%;
+}
+
+.project__image-button:focus-visible,
+.project__lightbox-close:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+}
+
+.project__lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.82);
+    cursor: zoom-out;
+}
+
+.project__lightbox-dialog {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 0.75rem;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: default;
+}
+
+.project__lightbox-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(92vw, 1200px);
+    max-height: calc(100vh - 6rem);
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.project__lightbox-close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.project__lightbox-caption {
+    color: #fff;
+    font-size: var(--small-font-size);
 }
 
 .project__title {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-5);
-}
-.project__button {
-    display: flex;           /* Use flexbox to arrange buttons in a row */
-    gap: 10px;               /* Space between the buttons */
-    margin-top: 6px;
-    margin-right: 6px;
-  }
-  
-  .project__button button {
-    color: var(--text-color);
-    font-size: var(--small-font-size);
-    padding: 10px 20px;      /* Add padding to make the button bigger */
-    border-radius: 12px;      /* More rounded corners */
-    border: 1px solid #999; /* Darker border color */
-    background-color: #f5f5f5; /* Slightly darker background */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-  }
-
-  .project__button button:hover {
-    background-color: #e0e0e0; /* Darker background on hover */
-    border-color: #666; /* Darker border on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-  }
-  
-
-.project__button-icon {
-    font-size: 1rem;
-    transition: 0.4s;
+    font-weight: var(--font-bold);
+    margin-bottom: 0.25rem;
 }
 
-.project__button:hover .project__button-icon{
-    transform: translateX(0.25rem);
-}
 .project__description {
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
     color: var(--text-color);
-    margin-bottom: var(--mb-0-5);
-  }
-  
-
-/* ACTIVE PROJECT */
-.active__project {
-    background-color: var(--title-color);
-    color: var(--container-color);
-}
-.section__subtitle h2{
-    font-size: 50px;
-}
-/* BREAK POINTS */
-@media screen and (max-width: 992px) {
-    .project__container {
-        gap: 1.25rem;
-    }
-
-    .project__card {
-        padding: 1rem;
-    }
-
-    .project__img {
-        margin-bottom: 0.75rem;
-    }
-
-    .project__title {
-        margin-bottom: 0.25rem;
-    }
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
-    .project__container {
-        grid-template-columns: max-content;
-    }
-    .section__subtitle h2{
-        font-size: 25px;
-    }
+.project__technologies {
+    color: var(--text-color);
+    font-size: var(--smaller-font-size);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 576px) {
-    .project__container {
-        grid-template-columns: 1fr;
-    }
-
-    .project__img {
-        width: 100%;
-    }
-    .section__subtitle h2{
-        font-size: 20px;
-    }
+.project__technologies span {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
 }
 
-@media screen and (max-width: 350px) {
-    .project__item {
-        font-size: var(--small-font-size);
-    }
+.project__link {
+    color: var(--link-color);
+    font-size: var(--small-font-size);
+}
 
-    .project__filters {
-        column-gap: 0.25rem;
-    }
-    .section__subtitle h2{
-        font-size: 12px;
-    }
+.project__link:hover {
+    text-decoration: underline;
 }

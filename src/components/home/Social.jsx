@@ -1,18 +1,13 @@
 import React from "react";
-import { FiTwitter, FiGithub, FiLinkedin, FiInstagram} from "react-icons/fi";
-
+import CV from "../../assets/CV.pdf";
 const Social = () => {
     return (
         <div className="home__social">
-            <a href="https://www.instagram.com/pramit.sr/" className="home__social-icon" target="_blank">
-                <FiInstagram />
-            </a>
-            <a href="https://github.com/pramit-sr" className="home__social-icon" target="_blank">
-                <FiGithub />
-            </a>
-            <a href="https://www.linkedin.com/in/pramit-sarkar-0b2884251/" className="home__social-icon" target="_blank">
-                <FiLinkedin />
-            </a>
+            <span>Links:</span>
+            <a href="https://www.linkedin.com/in/pramit-sarkar-0b2884251/" target="_blank" rel="noreferrer">[LinkedIn]</a>
+            <a href="https://github.com/pramit-sr" target="_blank" rel="noreferrer">[GitHub]</a>
+            <a href="https://www.instagram.com/pramit.sr/" target="_blank" rel="noreferrer">[Instagram]</a>
+            <a href={CV} download>[Resume]</a>
         </div> 
     ); 
 }

@@ -5,10 +5,11 @@
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .nav {
-    height: calc(var(--header-height) + 1.5rem);
+    height: 3.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,33 +21,86 @@
     font-weight: var(--font-medium);
 }
 
+.nav__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.nav__logo-mark {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.55rem;
+    background: var(--title-color);
+    color: var(--body-color);
+    font-size: 0.72rem;
+    font-weight: var(--font-bold);
+    letter-spacing: 0;
+}
+
+.nav__logo-name {
+    font-size: 1.1rem;
+    font-weight: var(--font-bold);
+}
+
+.nav__logo-name span {
+    color: #d75b3f;
+}
+
+.nav__menu {
+    margin-left: auto;
+}
+
 .nav__list {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 0;
 }
 
 .nav__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: var(--small-font-size);
+    display: block;
+    padding: 0.95rem 0.8rem 0.8rem;
+    border-bottom: 2px solid transparent;
     color: var(--title-color);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
-    transition: .3s;
+    transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav__icon, .nav__close, .nav__toggle {
     display: none;
 }
 
-/* ACTIVE LINK */
-.active-link, .nav__link:hover {
-    color: var(--title-color-dark);
+.nav__theme {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-/* CHANGE HEADER */
+.nav__theme:hover {
+    color: var(--title-color);
+    transform: rotate(-8deg);
+}
+
+.active-link, .nav__link:hover {
+    color: var(--link-color);
+}
+
+.active-link {
+    border-bottom-color: #d75b3f;
+}
+
 .scroll-header {
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 4px var(--shadow-color);
 }
 
 /* BREAK POINTS */
@@ -67,7 +121,7 @@
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+        box-shadow: 0 -1px 4px var(--shadow-color);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
@@ -103,6 +157,11 @@
     .nav__toggle {
         font-size: 1.1rem;
         cursor: pointer;
+    }
+
+    .nav__theme {
+        width: 2rem;
+        height: 2rem;
     }
 
     .nav__icon, .nav__close, .nav__toggle {

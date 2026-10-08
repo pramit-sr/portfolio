@@ -14,7 +14,7 @@ const About = () => {
             <div className="about__data">
                 <Info />
                 <p className="about__description">
-                I am a pre-final year B.Tech student with a solid foundation in data structures and algorithms and experience
+                B.Tech student with a solid foundation in data structures and algorithms and experience
                 in frontend development. I enjoy tackling complex DSA challenges and have a keen interest in building
                 engaging and user-centered applications.
                 </p>

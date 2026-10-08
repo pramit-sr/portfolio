@@ -1,16 +1,29 @@
 import React from 'react';
 import "./skills.css";
-import Frontend from './Frontend';
-import Backend from './Backend';
+
+const techSkills = [
+  "HTML",
+  "CSS",
+  "Next.js",
+  "JavaScript",
+  "React",
+  "TypeScript",
+  "Java",
+  "Node.js",
+  "MySQL",
+  "C++",
+  "Express.js",
+  "MongoDB",
+];
 
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
-        <h2 className="section__title">Skills</h2>
-        <span className="section__subtitle">Technical Level</span>
-        <div className="skills__container container grid">
-            <Frontend />
-            <Backend />
+        <div className="skills__container container">
+            <h2 className="skills__title">Tech Skills</h2>
+            <ul className="skills__list">
+                {techSkills.map((skill) => <li key={skill}>{skill}</li>)}
+            </ul>
         </div>
     </section>
   );
