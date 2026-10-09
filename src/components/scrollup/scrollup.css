@@ -37,6 +37,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .scrollup {
+        aspect-ratio: auto;
+    }
+
     .show-scroll {
         bottom: 4rem;
     }

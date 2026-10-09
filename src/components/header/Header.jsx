@@ -28,8 +28,7 @@ const Header = () => {
         <header className="header">
             <nav className="nav container">
                 <a href="#home" className="nav__logo" aria-label="Pramit Sarkar, home">
-                    <span className="nav__logo-mark">PS</span>
-                    <span className="nav__logo-name">pramit<span>.</span></span>
+                    <span className="nav__logo-name">Pramit Sarkar</span>
                 </a>
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
