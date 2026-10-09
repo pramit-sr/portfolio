@@ -149,12 +149,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    .home.section {
+        padding-top: 4.5rem;
+    }
+
     .home__title{
         font-size: var(--h1-font-size);
     }
     .home__content {
         grid-template-columns: minmax(0, 1fr);
-        padding-top: 3.5rem;
+        padding-top: 0;
     }
     .home__scroll {
         margin-left: .25rem;
