@@ -27,10 +27,26 @@
     gap: 0.55rem;
 }
 
+.nav__logo-mark {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.55rem;
+    background: var(--title-color);
+    color: var(--body-color);
+    font-size: 0.72rem;
+    font-weight: var(--font-bold);
+    letter-spacing: 0;
+}
+
 .nav__logo-name {
     font-size: 1.1rem;
     font-weight: var(--font-bold);
-    color: var(--link-color);
+}
+
+.nav__logo-name span {
+    color: #d75b3f;
 }
 
 .nav__menu {
@@ -105,6 +121,10 @@
     .nav__list {
         column-gap: 0.25rem;
         row-gap: 0;
+    }
+
+    .nav__item--desktop-only {
+        display: none;
     }
 
     .nav__link {

@@ -28,33 +28,34 @@ const Header = () => {
         <header className="header">
             <nav className="nav container">
                 <a href="#home" className="nav__logo" aria-label="Pramit Sarkar, home">
-                    <span className="nav__logo-name">Pramit Sarkar</span>
+                    <span className="nav__logo-mark">PS</span>
+                    <span className="nav__logo-name">pramit<span>.</span></span>
                 </a>
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
-                        <li className="nav__item">
+                        <li className="nav__item nav__item--desktop-only">
                             <a href="#home" onClick={() => setActiveNav("#home")} 
                             className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
-                                <HiOutlineHome className="nav__icon"/>Home
+                                <HiOutlineHome className="nav__icon"/>home
                             </a>
                         </li>
         
-                        <li className="nav__item">
+                        <li className="nav__item nav__item--desktop-only">
                             <a href="#skills" onClick={() => setActiveNav("#skills")} 
                             className={activeNav === "#skills" ? "nav__link active-link" : "nav__link"}>
-                                <HiOutlineBadgeCheck className="nav__icon"/>Skills
+                                <HiOutlineBadgeCheck className="nav__icon"/>skills
                             </a>
                         </li>
-                        <li className="nav__item">
+                        <li className="nav__item nav__item--desktop-only">
                             <a href="#portfolio" onClick={() => setActiveNav("#portfolio")} 
                             className={activeNav === "#portfolio" ? "nav__link active-link" : "nav__link"}>
-                                <HiOutlinePhotograph className="nav__icon"/>Projects
+                                <HiOutlinePhotograph className="nav__icon"/>projects
                             </a>
                         </li>
                         <li className="nav__item">
                             <a href="#contact" onClick={() => setActiveNav("#contact")} 
                             className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
-                                <HiOutlineMail className="nav__icon"/>Contact
+                                <HiOutlineMail className="nav__icon"/>contact
                             </a>
                         </li>
                     </ul>
